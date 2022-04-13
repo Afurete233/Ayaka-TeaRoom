@@ -1,24 +1,21 @@
-# demo-login
+# 白鷺茶室
 
-## Project setup
-```
-yarn install
-```
+#一个高效追番工具
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+这里是未打包Vue项目
 
-### Compiles and minifies for production
-```
-yarn build
-```
 
-### Lints and fixes files
-```
-yarn lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+拖动番剧卡片操作：
+
+向右为添加喜欢
+向下为添加已看完
+
+向上为添加未看完
+
+向左为添加准备看
+
+向右下角为不想看
+
+向左下角为黑名单
