@@ -1,25 +1,66 @@
 {
-  "name": "demo-login",
+  "name": "ayaka_tearoom",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
   },
+  "main": "background.js",
   "dependencies": {
-    "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "@agconnect/database": "^1.3.1",
+    "FileSaver": "^0.10.0",
+    "awe-dnd": "^0.3.4",
+    "axios": "^1.1.2",
+    "babel-loader": "^8.2.5",
+    "babel-polyfill": "^6.26.0",
+    "carddragger": "^0.3.6",
+    "core-js": "^3.25.5",
+    "dependencies": "^0.0.1",
+    "electron-builder": "^23.6.0",
+    "electron-vue": "^0.0.1",
+    "element-plus": "^2.2.6",
+    "element-ui": "^2.15.10",
+    "file-saver": "^2.0.5",
+    "fs": "^0.0.1-security",
+    "gitalk": "^1.8.0",
+    "hydrogen-js-sdk": "^2.3.0",
+    "js-cookie": "^3.0.1",
+    "path-browserify": "^1.0.1",
+    "react": "^15.0.0",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^15.0.0",
+    "vue": "^2.7.13",
+    "vue-cli": "^2.9.6",
+    "vue-cli-plugin-electron-builder": "~2.1.1",
+    "vue-devtools": "^5.1.4",
+    "vue-loader": "17.0.0",
+    "vue3-dnd": "^2.0.2",
+    "webpack": "^5.74.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.6.14"
+    "@babel/core": "^7.19.3",
+    "@babel/eslint-parser": "^7.19.1",
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-plugin-eslint": "~5.0.8",
+    "@vue/cli-service": "~5.0.8",
+    "babel-polyfill": "^6.26.0",
+    "browserify": "^17.0.0",
+    "electron": "^21.1.1",
+    "electron-devtools-installer": "^3.2.0",
+    "electron-icon-builder": "^2.0.1",
+    "electron-packager": "^16.0.0",
+    "eslint": "^8.25.0",
+    "eslint-plugin-vue": "^9.6.0",
+    "node-sass": "^7.0.3",
+    "sass-loader": "^13.1.0",
+    "vue-cli-plugin-element-ui": "~1.1.4",
+    "vue-template-compiler": "^2.7.12"
   },
   "eslintConfig": {
     "root": true,
@@ -39,5 +80,7 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "__npminstall_done": false,
+  "icon": "src/public/favicon.ico"
 }

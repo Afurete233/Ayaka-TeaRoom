@@ -1,0 +1,105 @@
+[{
+        "title": "AgeFun",
+        "api": "https://www.agemys.net/detail/",
+        "mode": "0",
+        "color": "",
+        "bgcolor": "",
+        "icon": ""
+    },
+    {
+        "title": "Age手机",
+        "api": "https://web.age-spa.com:8443/#/detail/",
+        "mode": "0",
+        "color": "",
+        "bgcolor": "",
+        "icon": ""
+    },
+    {
+        "title": "樱花动漫",
+        "api": "http://www.yinghuacd.com/search/",
+        "mode": "1",
+        "color": "",
+        "bgcolor": "",
+        "icon": ""
+    },
+    {
+        "title": "Bimiacg",
+        "api": "https://www.bimiacg4.net/vod/search/wd/",
+        "mode": "1",
+        "color": "",
+        "bgcolor": "",
+        "icon": ""
+    },
+    {
+        "title": "Dilidili",
+        "api": "https://www.dilidili8.cc/public/api.php?app=video&do=search&q=",
+        "mode": "1",
+        "color": "",
+        "bgcolor": "",
+        "icon": "https://www.dilidili8.cc/logo.png"
+    },
+    {
+        "title": "Bilibili",
+        "api": "https://search.bilibili.com/bangumi?keyword=",
+        "mode": "1",
+        "color": "",
+        "bgcolor": "",
+        "icon": ""
+    },
+    {
+        "title": "AcFun",
+        "api": "https://www.acfun.cn/search?type=bgm&keyword=",
+        "mode": "1",
+        "color": "",
+        "bgcolor": "",
+        "icon": "https://ali-imgs.acfun.cn/kos/nlav10360/static/common/widget/header/img/acfunlogo.11a9841251f31e1a3316.svg"
+    },
+    {
+        "title": "去看吧",
+        "api": "https://www.k6dm.com/index.php/vod/search.html?wd=",
+        "mode": "1",
+        "color": "",
+        "bgcolor": "",
+        "icon": "https://www.k6dm.com/klogo.png"
+    },
+    {
+        "title": "萌语动漫",
+        "api": "http://ci.moefz.cc/vodsearch.html?wd=",
+        "mode": "1",
+        "color": "",
+        "bgcolor": "",
+        "icon": ""
+    },
+    {
+        "title": "dm2022",
+        "api": "https://www.dm2022.com/vodsearch.html?wd=",
+        "mode": "1",
+        "color": "",
+        "bgcolor": "",
+        "icon": ""
+    },
+    {
+        "title": "风车动漫",
+        "api": "https://www.92wuc.com/search/-------------.html?wd=",
+        "mode": "1",
+        "color": "",
+        "bgcolor": "",
+        "icon": ""
+    },
+    {
+        "title": "动漫网",
+        "api": "https://www.dongman8.com/search.php?searchword=",
+        "mode": "1",
+        "color": "",
+        "bgcolor": "",
+        "icon": ""
+    },
+    {
+        "title": "芝麻观",
+        "api": "http://www.zhimaguan.cc/index.php/vod/search.html?wd=",
+        "mode": "1",
+        "color": "",
+        "bgcolor": "",
+        "icon": ""
+    }
+]
