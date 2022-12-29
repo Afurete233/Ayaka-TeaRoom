@@ -103,6 +103,17 @@ const loadweek = function () {
 };
 
 
+const loading_acg_url_json = function () {
+  var _this = this;
+  axios
+    .get("https://raw.githubusercontent.com/Afurete233/Ayaka_TeaRoom/main/URLdata.json")
+    .then((response) => {
+      _this.old_acg_url = response.data;
+    }).catch(function (error) {
+      console.log(error.response);
+    });
+}
+
 const isNew = function (AID) {
   for (let index = 0; index < this.saveweeknew.length; index++) {
     if (this.saveweeknew[index].id == AID) {
@@ -116,6 +127,7 @@ const isNew = function (AID) {
 
 export default {
   loadweek,
+  loading_acg_url_json,
   old_acg_url,
   isNew,
   nodataimg,
@@ -129,6 +141,7 @@ export default {
   saveweeknew: [],
   methods: {},
   mounted() {
+
   },
 };
 </script>

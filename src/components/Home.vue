@@ -120,6 +120,7 @@ export default {
   },
   mounted() {
     DefaultData.loadweek();
+    DefaultData.loading_acg_url_json();
   },
 };
 </script>

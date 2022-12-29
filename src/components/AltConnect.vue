@@ -40,25 +40,25 @@ export default {
   },
   data() {
     return {
-      acg_url_data: [],
+      acg_url_data: DefaultData.old_acg_url,
       imgURL: "",
       defalutLogoUrl: DefaultData.errorimg,
     };
   },
 
   mounted() {
-    
-    var _this = this;
-    _this.acg_url_data = DefaultData.old_acg_url;
 
-    axios
-      .get("https://raw.githubusercontent.com/Afurete233/Ayaka_TeaRoom/main/URLdata.json")
-      .then((response) => {
-        _this.acg_url_data = response.data;
-      }).catch(function (error) {
-        console.log(error.response);
-        _this.acg_url_data = DefaultData.old_acg_url;
-      });
+    // var _this = this;
+    // _this.acg_url_data = DefaultData.old_acg_url;
+
+    // axios
+    //   .get("https://raw.githubusercontent.com/Afurete233/Ayaka_TeaRoom/main/URLdata.json")
+    //   .then((response) => {
+    //     _this.acg_url_data = response.data;
+    //   }).catch(function (error) {
+    //     console.log(error.response);
+    //     _this.acg_url_data = DefaultData.old_acg_url;
+    //   });
 
 
 
