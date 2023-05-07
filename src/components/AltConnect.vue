@@ -73,7 +73,7 @@ export default {
       }
 
       axios
-        .get("https://api.agefans.app/v2/detail/" + index)
+        .get(DefaultData.age_api + "detail/" + index)
         .then((response) => {
           _this.imgURL = response.data.AniInfo.R封面图;
           _this.acgdata.NewTitle = response.data.AniInfo.R新番标题;

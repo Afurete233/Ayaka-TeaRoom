@@ -16,7 +16,14 @@ export default {
     return {
     };
   },
-  mounted() { },
+  mounted() {
+    this.login();
+  },
+  methods: {
+    login() {
+      // this.$gtag.event('login', { method: 'Google' })
+    }
+  }
 };
 </script>
 

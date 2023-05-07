@@ -28,8 +28,11 @@ const acg_type = [
   "黑名单",
   "正在看",
 ];
+
+const age_api = "https://v2.age-api.com:8443/v2/";
+
 const acg_web_url = {
-  acgfun: "https://www.agemys.net",
+  acgfun: "https://www.agemys.vip/",
   acgfun_mobile: "https://web.age-spa.com:8443/#",
   omofun: "https://omofun.tv/vod/search.html?wd=",
   yinghuacd: "http://www.yinghuacd.com/search/",
@@ -41,7 +44,7 @@ const acg_web_url = {
 const old_acg_url =
   [{
     "title": "AgeFun",
-    "api": "https://www.agemys.net/detail/",
+    "api": acg_web_url.acgfun + "detail/",
     "mode": "0",
     "color": "",
     "bgcolor": "",
@@ -90,13 +93,13 @@ const old_acg_url =
 const errorimg = 'this.src="' + require("@/assets/error.jpg") + '"';
 const nodataimg = require("@/assets/nodata.png");
 const type_sw = Array(acg_type.length).fill(false);
-const Main_url = "https://www.agemys.net";
+const Main_url = "https://www.agemys.vip";
 import axios from "axios";
 
 const loadweek = function () {
   var _this = this;
   axios
-    .get("https://api.agefans.app/v2/home-list?update=1&recommend=1")
+    .get(age_api + "home-list?update=1&recommend=1")
     .then((response) => {
       _this.saveweeknew = response.data.XinfansInfo;
     });
@@ -139,6 +142,7 @@ export default {
   Main_url,
   acg_colos_info,
   saveweeknew: [],
+  age_api,
   methods: {},
   mounted() {
 

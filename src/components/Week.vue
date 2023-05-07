@@ -8,19 +8,19 @@
             <el-timeline-item v-for="(item, index) in showdata" :timestamp="item.R更新时间str" placement="top"
               draggable="false" :key="index" type="primary" :title="item.R动画名称">
               <span @click="
-  dialogacgweb = true;
-acgdata = item;
+                dialogacgweb = true;
+              acgdata = item;
               ">
                 <a target="_blank">
                   <el-card draggable="false" style="border: none" :body-style="{
-  padding: '0px',
-  background: type_color(item.AID),
-}" v-if="reload" :style="{ background: type_color(item.AID) }">
+                    padding: '0px',
+                    background: type_color(item.AID),
+                  }" v-if="reload" :style="{ background: type_color(item.AID) }">
                     <el-col :xs="12" :sm="6" :md="4" :lg="3" :xl="2" draggable="true" @mousedown.native="move"
                       @dragend.native="up(item.AID, item.R动画名称, item)">
                       <el-card draggable="true" style="border: none" :body-style="{
-  padding: '0px',
-}">
+                        padding: '0px',
+                      }">
                         <div style="position: relative">
                           <img draggable="false" :src="item.R封面图小" class="image" width="100%" :onerror="defalutLogoUrl"
                             style="border-radius: 3px 3px 0px 0px;aspect-ratio: 150 / 208;" />
@@ -102,7 +102,7 @@ export default {
     this.MAXnum = 5;
 
     axios
-      .get("https://api.agefans.app/v2/home-list?update=1&recommend=1")
+      .get(DefaultData.age_api + "home-list?update=1&recommend=1")
       .then((response) => {
         _this.save = response.data.XinfansInfo;
         this.$nextTick(() => {
@@ -365,7 +365,7 @@ export default {
     getimg(index) {
       var _this = this;
       axios
-        .get("https://api.agefans.app/v2/detail/" + index)
+        .get(DefaultData.age_api + "detail/" + index)
         .then((response) => {
           _this.showdata = _this.showdata.concat(response.data.AniInfo);
           this.runstart(this.showdata, 0);

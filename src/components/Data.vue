@@ -19,14 +19,14 @@
       <el-col :xs="12" :sm="6" :md="4" :lg="3" :xl="2" v-for="item in showdata" :key="item.AID" draggable="true"
         @mousedown.native="move" @dragend.native="up(item.AID, item.Title, item)" :title="item.Title">
         <span @click="
-  dialogacgweb = true;
-acgdata = item;
+          dialogacgweb = true;
+        acgdata = item;
         ">
           <a target="_blank">
             <el-card style="border: none" :body-style="{ padding: '0px', background: type_color(item.AID) }">
               <div style="position: relative">
-                <img height="inherit" draggable="false" v-bind:src="item.PicSmall" :onerror="defalutLogoUrl"
-                  class="image" width="100%" style="border-radius: 3px 3px 0px 0px;aspect-ratio: 150 / 208;" />
+                <img height="inherit" draggable="false" v-bind:src="item.PicSmall" :onerror="defalutLogoUrl" class="image"
+                  width="100%" style="border-radius: 3px 3px 0px 0px;aspect-ratio: 150 / 208;" />
                 <transition v-if="reload" name="el-fade-in-linear">
                   <img src="..\public\heart.svg" v-if="ishow(item.AID)" id="love" />
                   <div v-if="isBlack(item.AID)" id="black">黑名单</div>
@@ -199,7 +199,7 @@ export default {
           //已看完
         }
 
-        if (colorset != -1) 
+        if (colorset != -1)
           tips1.style = "background-color:" + this.acg_colos[colorset];
 
 
@@ -272,7 +272,7 @@ export default {
         this.page++;
         axios
           .get(
-            "https://api.agefans.app/v2/" +
+            DefaultData.age_api +
             _this.Data_type +
             "?page=" +
             _this.page +
@@ -309,7 +309,7 @@ export default {
   mounted() {
     var _this = this;
     axios
-      .get("https://api.agefans.app/v2/" + this.Data_type + "?page=1&size=20")
+      .get(DefaultData.age_api + this.Data_type + "?page=1&size=20")
       .then((response) => {
         this.MAXnum = response.data.AllCnt;
         this.runstart(response.data.AniPre, 1);
@@ -347,7 +347,7 @@ export default {
             // console.log("ok--" + _this.page);
             axios
               .get(
-                "https://api.agefans.app/v2/" +
+                DefaultData.age_api +
                 _this.Data_type +
                 "?page=" +
                 _this.page +

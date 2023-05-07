@@ -41,6 +41,10 @@
           导出数据</el-button></el-card>
       <el-card :body-style="{ padding: '0px' }" :key="4">
         <h2>公告</h2>
+        <h5>--2023/5/8--</h5>
+        <h5>版本:Ayaka_TeaRoomV3.5</h5>
+        <h5>修复:api更新了</h5>
+
         <h5>--2022/12/28--</h5>
         <h5>版本:Ayaka_TeaRoomV3.4</h5>
         <h5>新增:拖动提示(灵动条)</h5>

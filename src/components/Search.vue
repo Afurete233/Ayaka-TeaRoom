@@ -5,8 +5,8 @@
       <el-col :xs="12" :sm="6" :md="4" :lg="3" :xl="2" v-for="item in showdata" :key="item.AID" draggable="true"
         @mousedown.native="move" @dragend.native="up(item.AID, item.R动画名称, item)" :title="item.R动画名称">
         <span @click="
-  dialogacgweb = true;
-acgdata = item;
+          dialogacgweb = true;
+        acgdata = item;
         ">
           <a target="_blank">
             <el-card style="border: none" :body-style="{ padding: '0px', background: type_color(item.AID) }">
@@ -97,7 +97,7 @@ export default {
 
       axios
         .get(
-          "https://api.agefans.app/v2/search?query=" +
+          DefaultData.age_api + "search?query=" +
           _this.Search_word +
           "&page=" +
           _this.page
@@ -313,7 +313,7 @@ export default {
         this.page++;
         axios
           .get(
-            "https://api.agefans.app/v2/search?query=" +
+            DefaultData.age_api + "search?query=" +
             _this.Search_word +
             "&page=" +
             _this.page
@@ -372,7 +372,7 @@ export default {
             // console.log("ok--" + _this.page);
             axios
               .get(
-                "https://api.agefans.app/v2/search?query=" +
+                DefaultData.age_api + "search?query=" +
                 _this.Search_word +
                 "&page=" +
                 _this.page
